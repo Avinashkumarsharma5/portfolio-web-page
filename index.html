@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website">
+    <title>Portfolio of Avinash Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <!-- LinkedIn Profile Badge Link -->
+                    <li>
+                        <a href="https://in.linkedin.com/in/avinash-k-6627062a0?trk=profile-badge" target="_blank">About Me (My LinkedIn Account)</a>
+                    </li>
+                    <!-- GitHub Projects Link -->
+                    <li><a href="https://github.com/Avinashkumarsharma5" target="_blank">Projects</a></li>
+                    <!-- Contact Link (should open email client) -->
+                    <li><a href="mailto:ph15.n7@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image Section (Newly added) -->
+    <section id="image">
+        <div class="container">
+            <h2>My Picture</h2>
+            <img src="photo.jpg" alt="Avinash Sharma" class="profile-img">
+            <p>This is a picture of me! Feel free to connect with me on my LinkedIn or GitHub to know more.</p> 
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello, I’m Avinash Sharma, but most people call me 'Golu'. I am a web developer, multimedia editor, and teacher. I was born and raised in Chatra, Jharkhand, and am still living in Ranchi. When I am not busy at work, you will find me making websites, clicking amazing photos, playing mobile games, drawing my imagination on paper, and watching movies and series. I believe the best way to learn anything is to have fun, which is why I try to infuse humor into everything I do. Be it websites, videos, memes, or life, you can always look forward to a good day when you are with me.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A brief description of the project. <a href="https://github.com/Avinashkumarsharma5/qiuz-app.git">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>A brief description of the project. <a href="https://github.com/Avinashkumarsharma5/web._.golu.git">View Project</a></p>
+            </div>
+        </div>
+    </section> <!-- Closing the Projects Section -->
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="/send-message" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

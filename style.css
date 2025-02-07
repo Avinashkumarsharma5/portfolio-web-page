@@ -1,0 +1,268 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #b07329;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Image Section */
+#image {
+    text-align: center;
+    margin: 50px 0;
+    animation: slideInUp 1s ease-out;
+}
+
+#image h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#image img.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+#image p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 40px 0;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.project a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 40px 0;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Hover effect for header */
+header.hovered {
+    background-color: #f4f4f4; /* Change the header background color on hover */
+}
+
+/* Button click effect */
+button.clicked {
+    background-color: #4CAF50; /* Green color when clicked */
+    color: white;
+}
+
+/* Smooth scroll (no additional styles needed, just for smooth scrolling) */
+html {
+    scroll-behavior: smooth;
+}
